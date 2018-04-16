@@ -258,7 +258,7 @@ class aldrapay
             'amount' => $total,
             'currency' => $aldrapayCurrency->getAlpha3(),
             'orderID' => $orderId,
-            'returnURL' => HTTP_SERVER . DIR_WS_CATALOG . 'checkout_process_aldrapay_disabled.php',
+            'returnURL' => HTTP_SERVER . DIR_WS_CATALOG . 'checkout_process_aldrapay.php',
             'notifyURL' => HTTP_SERVER . DIR_WS_CATALOG . 'ipn_process_aldrapay.php',
             'customerEmail' => $order->customer['email_address'],
             'customerPhone' => $order->customer['telephone'], // no cell phone defined, just use customer phone
